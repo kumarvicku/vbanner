@@ -1,17 +1,19 @@
 
 <h1>🅼🅰🅳🅴 🆆🅸🆃🅷 🅿🆈🆃🅷🅾🅽</h1>
 
-![pybanner-1-22-2022](https://user-images.githubusercontent.com/84949946/150625223-cf525d48-a502-4059-89ec-1800452249b0.png)
+![Uploading TextPro.me_161ec186bb1e84.png…]()
 
-<h1 align="center">🅿🆈🅱🅰🅽🅽🅴🆁
+
+
+<h1 align="center🆅🅱🅰🅽🅽🅴🆁
 <pre>                           Created By <a href="https://github.com/kumarvicku">kumarvicku</a></pre></h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.0-black?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/kumarvicku/vphisher?style=for-the-badge&color=darkblue">
-  <img src="https://img.shields.io/github/forks/kumarvicku/vphisher?color=brown&style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/kumarvicku/vphisher?color=darkgreen&style=for-the-badge">
-  <img src="https://img.shields.io/github/license/kumarvicku/vphisher?style=for-the-badge&color=darkred">   
+  <img src="https://img.shields.io/github/stars/kumarvicku/vbanner?style=for-the-badge&color=darkblue">
+  <img src="https://img.shields.io/github/forks/kumarvicku/vbanner?color=brown&style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/kumarvicku/vbanner?color=darkgreen&style=for-the-badge">
+  <img src="https://img.shields.io/github/license/kumarvicku/vbanner?style=for-the-badge&color=darkred">   
 <br>
 <br>
   <img src="https://img.shields.io/badge/Author-Kumarvicku-blue?style=flat-rectangle">
@@ -30,15 +32,15 @@ This is still in BETA so you may see problems, please open an issue on GitHub an
 ### [+] Installation
 
 ```bash
-apt install python3
+apt install python2
 ```
 
 ```bash
-https://github.com/kumarvicku/pybanner.git
+https://github.com/kumarvicku/vbanner.git
 ```
 
 ```bash
-cd pybanner
+cd vbanner
 ```
 
 ```bash
@@ -50,13 +52,13 @@ bash requirements.sh
 ```
 
 ```bash
-python3 creator.py
+python2 creator.py
 ```
 
 
 ### Or, Use Single Command
 ```bash
-apt install python3 && git clone https://github.com/kumarvicku/pybanner && cd pybanner && bash requirements.sh && python3 creator.py
+apt install python2 && git clone https://github.com/kumarvicku/vbanner && cd vbanner && bash requirements.sh && python2 creator.py
 ```
 
 ### Features:
@@ -76,7 +78,7 @@ apt install python3 && git clone https://github.com/kumarvicku/pybanner && cd py
 #### Generated File Preview 
 
 
-### [+] The generated python file will be in python3!
+### [+] The generated python file will be in python2!
 
 
 
