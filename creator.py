@@ -33,7 +33,7 @@ error = red + '[' + white + '!' + red + '] '
 pw= yellow + '\n[' + white + '+' +yellow + ']'+' Please Wait!'
 
 os.system("clear")
-logo =
+logo ='''
 
 ||'''+blue+'''      _                                            ||
 ||'''+purple+'''_    _| |__  __ __ __  _ _    __ _ __               ||
@@ -41,7 +41,7 @@ logo =
 ||'''+green+''' \ V /| |) | (| | | | | | | |  __/ |                 ||
 ||'''+red+'''  \_/ |_.__/\_,_|_| |_|_| |_|\__||_|                ||
 
-
+'''
 
 
 
