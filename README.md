@@ -22,9 +22,6 @@
   <img src="https://img.shields.io/badge/Written%20In-Python-darkgreen?style=flat-rectangle">
 </p>
 
-### [+] in BETA
-
-This is still in BETA so you may see problems, please open an issue on GitHub and report them!
 
 
 ### [+] Description :
