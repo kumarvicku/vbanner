@@ -87,7 +87,8 @@ def slowprint(n):
             lines [35] = "'\'\'+red+'\'\'"+ lines[35]
             f.writelines(lines)
             print(("\n"+success+"File saved as "+filename))
-            os.system("python2 "+filename)options='''
+            os.system("python2 "+filename)
+            options='''
             '''+red+'''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             ||                       ||    '''+blue+'''       _                                              ||
             ||                       ||    '''+purple+'''_    _| |__  __ __ __  _ _    __ _ __                 ||
