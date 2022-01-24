@@ -35,7 +35,8 @@ _
 '''+green+'''\ \ / / '_ \/  '| '_ \| '_ \ / _ \ '_|
 '''+purple+''' \ V /| |) | (| | | | | | | |  __/ |
 '''+cyan+'''  \_/ |_.__/\_,_|_| |_|_| |_|\__||_|
-'''def slowprint(n):
+'''
+def slowprint(n):
   for word in n + '\n':
     sys.stdout.write(word)
     sys.stdout.flush()
