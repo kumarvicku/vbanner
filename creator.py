@@ -33,6 +33,17 @@ error = red + '[' + white + '!' + red + '] '
 pw= yellow + '\n[' + white + '+' +yellow + ']'+' Please Wait!'
 
 os.system("clear")
+logo =
+
+||'''+blue+'''      _                                            ||
+||'''+purple+'''_    _| |__  __ __ __  _ _    __ _ __               ||
+||'''+cyan+'''\ \ / / '_ \/  '| '_ \| '_ \ / _ \ '_|             ||
+||'''+green+''' \ V /| |) | (| | | | | | | |  __/ |                 ||
+||'''+red+'''  \_/ |_.__/\_,_|_| |_|_| |_|\__||_|                ||
+
+
+
+
 
 def slowprint(n):
     for word in n + '\n':
@@ -92,7 +103,7 @@ slowprint(logo)''')
             f.writelines(lines)
     print("\n"+success+"File saved as "+filename)
     os.system("python2 "+filename)
-options='''
+options='''n
 '''+red+'''
 =====================================================================================
 ||                       ||    '''+blue+'''      _                                            ||
