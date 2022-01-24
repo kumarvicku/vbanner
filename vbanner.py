@@ -114,10 +114,10 @@ def slowprint(n):
             '''
             def main():
               print((yellow+"[+]"+green+" Choose one option you want to generate:"+options))
-              num = input(ask+"Select "+red+"> ")
+              num = raw_input(ask+"Select "+red+"> ")
               while True:
                 if (num=="1"):
-                  logoword= input("\n"+ask+"Enter word(s) "+red+"> ")
+                  logoword= raw_input("\n"+ask+"Enter word(s) "+red+"> ")
                   if (logoword==""):
                     print(("\n"+error+"No Input"))
                     sleep(2)
@@ -129,7 +129,7 @@ def slowprint(n):
                         print(("\n"+error+"Error! Figlet not Installed.\n\n"+green+"[+] Install it by \"apt install figlet\""))
                         exit(1)
                         os.system("rm -rf temp.txt")
-                        filename = input("\n"+ask+"Output File Name "+red+"> ")
+                        filename = raw_input("\n"+ask+"Output File Name "+red+"> ")
                         if (filename==""):
                           print(("\n"+error+"No Input"))
                           sleep(2)
@@ -138,7 +138,7 @@ def slowprint(n):
                           writer(logotext,filename)
                           exit()
                           elif (num == "2"):
-                            logoword= input("\n"+ask+"Enter word(s) "+red+"> ")
+                            logoword= raw_input("\n"+ask+"Enter word(s) "+red+"> ")
                             if (logoword==""):
                               print(("\n"+error+"No Input"))
                               sleep(2)
@@ -150,7 +150,7 @@ def slowprint(n):
                                   print(("\n"+error+"Error! Toilet not Installed.\n\n"+green+"[+] Install it by \"apt install toilet\""))
                                   exit(1)
                                   os.system("rm -rf temp.txt")
-                                  filename = input("\n"+ask+"Output File Name "+red+"> " )
+                                  filename = raw_input("\n"+ask+"Output File Name "+red+"> " )
                                   if (filename==""):
                                     print(("\n"+error+"No Input"))
                                     sleep(2)
@@ -159,7 +159,7 @@ def slowprint(n):
                                     writer(logotext,filename)
                                     break
                                     elif (num == "3"):
-                                      logoword= input("\n"+ask+"Enter word(s) "+red+"> ")
+                                      logoword= raw_input("\n"+ask+"Enter word(s) "+red+"> ")
                                       if (logoword==""):
                                         print(("\n"+error+"No Input"))
                                         sleep(2)
@@ -167,7 +167,7 @@ def slowprint(n):
                                         slowprint(pw)
                                         try:
                                           logotext = requests.get('https://artii.herokuapp.com/make?text='+logoword).text
-                                          filename = input("\n"+ask+"Output File Name "+red+"> ")
+                                          filename = raw_input("\n"+ask+"Output File Name "+red+"> ")
                                           os.system("rm -rf "+filename)
                                           writer(logotext, filename)
                                           except:
