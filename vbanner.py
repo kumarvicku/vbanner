@@ -34,6 +34,13 @@ pw= yellow + '\n[' + white + '+' +yellow + ']'+' Please Wait!'
 
 os.system("clear")
 logo =blue+'''
+
+
+
+
+
+
+
        _
 '''+red+'''_    _| |__  __ __ __  _ _    __ _ __
 '''+green+'''\ \ / / '_ \/  '| '_ \| '_ \ / _ \ '_|
@@ -41,10 +48,11 @@ logo =blue+'''
 '''+cyan+'''  \_/ |_.__/\_,_|_| |_|_| |_|\__||_|
 
 
+
+
+
+
 '''
-
-
-
 def slowprint(n):
     for word in n + '\n':
         sys.stdout.write(word)
@@ -75,9 +83,13 @@ bblue="\\033[1;34m"
 bpurple="\\033[1;35m"
 bcyan="\\033[1;36m"
 bwhite="\\033[1;37m"
-# Use colors according to your wish       
+
+# Use colors according to your wish
+
 # Use https://fsymbols.com/generators/carty/ for your own font in banner
+
 # If you use a custom banner from any site, you may use colourbanner.py to add colors easily
+
 logo='\'\'\n'''+logotext+'''\n'\'\'
 def slowprint(n):
     for word in n + '\\n':
@@ -100,7 +112,7 @@ slowprint(logo)''')
             f.writelines(lines)
     print("\n"+success+"File saved as "+filename)
     os.system("python2 "+filename)
-options='''n
+options='''
 '''+red+'''
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ||                       ||    '''+blue+'''       _                                              ||
@@ -124,7 +136,9 @@ options='''n
 ||                       ||    '''+red+'''  \_/ |_.__/\_,_|_| |_|_| |_|\__||_|                  ||
 ||                       ||    '''+yellow+'''                                                      ||
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                                  
+       
+       
+       
 '''
 def main():
     print(yellow+"[+]"+green+" Choose one option you want to generate:"+options)
