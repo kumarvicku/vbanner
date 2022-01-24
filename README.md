@@ -53,13 +53,13 @@ bash requirements.sh
 ```
 
 ```bash
-python2 creator.py
+python2 vbanner.py
 ```
 
 
 ### Or, Use Single Command
 ```bash
-apt install python2 && git clone https://github.com/kumarvicku/vbanner && cd vbanner && bash requirements.sh && python2 creator.py
+apt install python2 && git clone https://github.com/kumarvicku/vbanner && cd vbanner && bash requirements.sh && python2 vbanner.py
 ```
 
 ### Features:
