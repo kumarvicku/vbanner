@@ -9,23 +9,23 @@ import os, sys, time, requests
 from time import sleep
 # Normal
 black="\033[0;30m"
-green="\033[0;31m"
-red="\033[0;32m"
-white="\033[0;33m"  
+red="\033[0;31m"
+green="\033[0;32m"
+yellow="\033[0;33m"  
 blue="\033[0;34m"
-cyan="\033[0;35m"
-purple="\033[0;36m"
-yellow="\033[0;37m"
+purple="\033[0;35m"
+cyan="\033[0;36m"
+white="\033[0;37m"
 
 # Bold
-bblack="\033[0;30m"
-bgreen="\033[0;31m"
-bred="\033[0;32m"
-bwhite="\033[0;33m"  
-bblue="\033[0;34m"
-bcyan="\033[0;35m"
-bpurple="\033[0;36m"
-byellow="\033[0;37m"
+bblack="\033[1;30m"
+bred="\033[1;31m"
+bgreen="\033[1;32m"
+byellow="\033[1;33m"
+bblue="\033[1;34m"
+bpurple="\033[1;35m"
+bcyan="\033[1;36m"
+bwhite="\033[1;37m"
 ask = green + '[' + white + '?' + green + '] '+ yellow
 success = green + '[' + white + '√' + green + '] '
 error = red + '[' + white + '!' + red + '] '
@@ -34,7 +34,7 @@ pw= yellow + '\n[' + white + '+' +yellow + ']'+' Please Wait!'
 os.system("clear")
 logo ='''
 
-||'''+blue+'''       _                                            ||
+||'''+blue+'''       _                                           ||
 ||'''+purple+'''_    _| |__  __ __ __  _ _    __ _ __              ||
 ||'''+cyan+'''\ \ / / '_ \/  '| '_ \| '_ \ / _ \ '_|             ||
 ||'''+green+''' \ V /| |) | (| | | | | | | |  __/ |               ||
@@ -58,23 +58,22 @@ def writer(logotext, filename):
 import os, sys, time
 # Normal
 black="\\033[0;30m"
-green="\\033[0;31m"
-red="\\033[0;32m"
-white="\\033[0;33m"  
+red="\\033[0;31m"
+green="\\033[0;32m"
+yellow="\\033[0;33m"  
 blue="\\033[0;34m"
-cyan="\\033[0;35m"
-purple="\\033[0;36m"
-yellow="\\033[0;37m"
-
+purple="\\033[0;35m"
+cyan="\\033[0;36m"
+white="\\033[0;37m"
 # Bold
-bblack="\\033[0;30m"
-bgreen="\\033[0;31m"
-bred="\\33[0;32m"
-bwhite="\\033[0;33m"  
-bblue="\\033[0;34m"
-bcyan="\\033[0;35m"
-bpurple="\\033[0;36m"
-byellow="\\033[0;37m"
+bblack="\\033[1;30m"
+bred="\\033[1;31m"
+bgreen="\\033[1;32m"
+byellow="\\033[1;33m"
+bblue="\\033[1;34m"
+bpurple="\\033[1;35m"
+bcyan="\\033[1;36m"
+bwhite="\\033[1;37m"
 # Use colors according to your wish       
 # Use https://fsymbols.com/generators/carty/ for your own font in banner
 # If you use a custom banner from any site, you may use colourbanner.py to add colors easily
@@ -103,21 +102,21 @@ slowprint(logo)''')
 options='''n
 '''+red+'''
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-||                       ||    '''+blue+'''       _                                               ||
+||                       ||    '''+blue+'''       _                                              ||
 ||                       ||    '''+purple+'''_    _| |__  __ __ __  _ _    __ _ __                 ||
 ||1. Figlet              ||    '''+cyan+'''\ \ / / '_ \/  '| '_ \| '_ \ / _ \ '_|                ||
 ||                       ||    '''+green+''' \ V /| |) | (| | | | | | | |  __/ |                  ||
 ||                       ||    '''+red+'''  \_/ |_.__/\_,_|_| |_|_| |_|\__||_|                  ||
 ||                       ||    '''+yellow+'''                                                      ||
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-||                       ||    '''+blue+'''        #                                             ||
+||                       ||    '''+blue+'''        #                                            ||
 ||                       ||    '''+purple+''' m   m  #mmm    mmm   m mm   m mm    mmm    m mm      ||
 ||                       ||    '''+cyan+''' "m m"  #" "#  "   #  #"  #  #"  #  #"  #   #"  "     ||
 ||2. Toilet              ||    '''+green+'''  #m#   #   #  m"""#  #   #  #   #  #""""   #         ||
 ||                       ||    '''+red+'''   #    ##m#"  "mm"#  #   #  #   #  "#mm"   #         ||
 ||                       ||    '''+yellow+'''                                                      ||
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-||                       ||    '''+blue+'''       _                                               ||
+||                       ||    '''+blue+'''       _                                              ||
 ||                       ||    '''+purple+'''_    _| |__  __ __ __  _ _    __ _ __                 ||
 ||3. website             ||    '''+cyan+'''\ \ / / '_ \/  '| '_ \| '_ \ / _ \ '_|                ||
 ||                       ||    '''+green+''' \ V /| |) | (| | | | | | | |  __/ |                  ||
