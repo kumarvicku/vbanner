@@ -113,75 +113,74 @@ def slowprint(n):
             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                     
             '''
             def main():
-              print((yellow+"[+]"+green+" Choose one option you want to generate:"+options))
-              num = raw_input(ask+"Select "+red+"> ")
-              while True:
-                if (num=="1"):
-                  logoword= raw_input("\n"+ask+"Enter word(s) "+red+"> ")
-                  if (logoword==""):
-                    print(("\n"+error+"No Input"))
+    print(green+"[+]"+yellow+" Choose one of the three options:"+options)
+    num = raw_input(ask+"Select "+purple+"> ")
+    while True:
+        if (num=="1"):
+            logoword= raw_input("\n"+ask+"Enter word(s) "+purple+"> ")
+            if (logoword==""):
+                print("\n"+error+"No Input")
+                sleep(2)
+                main()
+            os.system("figlet "+logoword+" >> temp.txt")
+            with open("temp.txt", 'r') as file1:
+                logotext = file1.read()
+                if (logotext==""):
+                    print("\n"+error+"Error! Figlet not Installed.\n\n"+yellow+"[+] Install it by \"apt install figlet\"")
+                    exit(1)
+                os.system("rm -rf temp.txt")
+                filename = raw_input("\n"+ask+"Output File Name "+purple+"> ")
+                if (filename==""):
+                    print("\n"+error+"No Input")
                     sleep(2)
                     main()
-                    os.system("figlet "+logoword+" >> temp.txt")
-                    with open("temp.txt", 'r') as file1:
-                      logotext = file1.read()
-                      if (logotext==""):
-                        print(("\n"+error+"Error! Figlet not Installed.\n\n"+green+"[+] Install it by \"apt install figlet\""))
-                        exit(1)
-                        os.system("rm -rf temp.txt")
-                        filename = raw_input("\n"+ask+"Output File Name "+red+"> ")
-                        if (filename==""):
-                          print(("\n"+error+"No Input"))
-                          sleep(2)
-                          main()
-                          os.system("rm -rf "+filename)
-                          writer(logotext,filename)
-                          exit()
-                          elif (num == "2"):
-                            logoword= raw_input("\n"+ask+"Enter word(s) "+red+"> ")
-                            if (logoword==""):
-                              print(("\n"+error+"No Input"))
-                              sleep(2)
-                              main()
-                              os.system("toilet "+logoword+" >> temp.txt")
-                              with open("temp.txt", 'r') as file1:
-                                logotext = file1.read()
-                                if (logotext==""):
-                                  print(("\n"+error+"Error! Toilet not Installed.\n\n"+green+"[+] Install it by \"apt install toilet\""))
-                                  exit(1)
-                                  os.system("rm -rf temp.txt")
-                                  filename = raw_input("\n"+ask+"Output File Name "+red+"> " )
-                                  if (filename==""):
-                                    print(("\n"+error+"No Input"))
-                                    sleep(2)
-                                    main()
-                                    os.system("rm -rf "+filename)
-                                    writer(logotext,filename)
-                                    break
-                                    elif (num == "3"):
-                                      logoword= raw_input("\n"+ask+"Enter word(s) "+red+"> ")
-                                      if (logoword==""):
-                                        print(("\n"+error+"No Input"))
-                                        sleep(2)
-                                        main()
-                                        slowprint(pw)
-                                        try:
-                                          logotext = requests.get('https://artii.herokuapp.com/make?text='+logoword).text
-                                          filename = raw_input("\n"+ask+"Output File Name "+red+"> ")
-                                          os.system("rm -rf "+filename)
-                                          writer(logotext, filename)
-                                          except:
-                                            print((error+"No Internet or empty input!"))
-                                            exit(1)
-                                            
-                                            break
-                                            elif (num =="0"):
-                                              exit()
-                                              elif (num =="4"):
-                                                os.system("xdg-open --view https://github.com/kumarvicku?tab=repositories")
-                                                else:
-                                                  print(("\n"+error+"Error! Please choose right number!"))
-                                                  time.sleep(2)
-                                                  main()
-                                                  slowprint(logo)
-                                                  main()
+                os.system("rm -rf "+filename)
+            writer(logotext,filename)
+            exit()
+        elif (num == "2"):
+            logoword= raw_input("\n"+ask+"Enter word(s) "+purple+"> ")
+            if (logoword==""):
+                print("\n"+error+"No Input")
+                sleep(2)
+                main()
+            os.system("toilet "+logoword+" >> temp.txt")
+            with open("temp.txt", 'r') as file1:
+                logotext = file1.read()
+                if (logotext==""):
+                    print("\n"+error+"Error! Toilet not Installed.\n\n"+yellow+"[+] Install it by \"apt install toilet\"")
+                    exit(1)
+                os.system("rm -rf temp.txt")
+            filename = raw_input("\n"+ask+"Output File Name "+purple+"> " )
+            if (filename==""):
+                print("\n"+error+"No Input")
+                sleep(2)
+                main()
+            os.system("rm -rf "+filename)
+            writer(logotext,filename)
+            break
+        elif (num == "3"):
+            logoword= raw_input("\n"+ask+"Enter word(s) "+purple+"> ")
+            if (logoword==""):
+                print("\n"+error+"No Input")
+                sleep(2)
+                main()
+            slowprint(pw)
+            try:
+                 logotext = requests.get('https://artii.herokuapp.com/make?text='+logoword).text
+                 filename = raw_input("\n"+ask+"Output File Name "+purple+"> ")
+                 os.system("rm -rf "+filename)
+                 writer(logotext, filename)
+            except:
+                print(error+"No Internet or empty input!")
+                exit(1)
+            break
+        elif (num =="0"):
+            exit()
+        elif (num =="4"):
+        	os.system("xdg-open --view https://github.com/KasRoudra?tab=repositories")
+        else:
+            print("\n"+error+"Error! Please choose right number!")
+            time.sleep(2)
+            main()
+slowprint(logo)
+main()
