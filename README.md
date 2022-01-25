@@ -30,7 +30,7 @@
 ### [+] Installation
 
 ```bash
-apt install python2
+apt install python3
 ```
 
 ```bash
@@ -56,7 +56,7 @@ python2 vbanner.py
 
 ### Or, Use Single Command
 ```bash
-apt install python2 && git clone https://github.com/kumarvicku/vbanner && cd vbanner && bash requirements.sh && python2 vbanner.py
+apt install python3 && git clone https://github.com/kumarvicku/vbanner && cd vbanner && bash requirements.sh && python3 vbanner.py
 ```
 
 ### Features:
@@ -79,7 +79,7 @@ apt install python2 && git clone https://github.com/kumarvicku/vbanner && cd vba
 ![42ededb1-3ef8-4419-a745-149ad3e64205](https://user-images.githubusercontent.com/84949946/150723920-20cc0050-c330-4a61-8307-46258be75728.jpg)
 
 
-### [+] The generated python file will be in python2!
+### [+] The generated python file will be in python3!
 
 
 
