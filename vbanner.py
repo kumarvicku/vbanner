@@ -200,4 +200,4 @@ def main():
             time.sleep(2)
             main()
 slowprint(logo)
-main(
+main()
