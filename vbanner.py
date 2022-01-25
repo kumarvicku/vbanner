@@ -125,8 +125,17 @@ options='''
 ||                       ||    '''+green+''' \ V /| |) | (| | | | | | | |  __/ |                  ||
 ||                       ||    '''+red+'''  \_/ |_.__/\_,_|_| |_|_| |_|\__||_|                  ||
 ||                       ||    '''+yellow+'''                                                      ||
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                     
- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                    
+||                       ||    '''+blue+'''___                                                  ||
+||                       ||    '''+purple+'''< vbanner >                                           ||
+||4.cowsay               ||    '''+cyan+''' ---------                                           ||
+||                       ||    '''+green+'''        \   ^__^                                       ||
+||                       ||    '''+red+'''         \  (oo)\___                                   ||
+||                       ||    '''+yellow+'''            (__)\       )\/\                          ||
+||                       ||    '''+green+'''                ||----w |                            ||
+||                       ||    '''+red+'''               ||     ||                                 ||
+||                       ||    '''+yellow+'''                                                    ||
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              ||     
                                   
 '''
 def main():
@@ -190,6 +199,27 @@ def main():
             except:
                 print(error+"No Internet or empty input!")
                 exit(1)
+            break
+               elif (num == "2"):
+            logoword= raw_input("\n"+ask+"Enter word(s) "+purple+"> ")
+            if (logoword==""):
+                print("\n"+error+"No Input")
+                sleep(2)
+                main()
+            os.system("toilet "+logoword+" >> temp.txt")
+            with open("temp.txt", 'r') as file1:
+                logotext = file1.read()
+                if (logotext==""):
+                    print("\n"+error+"Error! Toilet not Installed.\n\n"+yellow+"[+] Install it by \"apt install toilet\"")
+                    exit(1)
+                os.system("rm -rf temp.txt")
+            filename = raw_input("\n"+ask+"Output File Name "+purple+"> " )
+            if (filename==""):
+                print("\n"+error+"No Input")
+                sleep(2)
+                main()
+            os.system("rm -rf "+filename)
+            writer(logotext,filename)
             break
         elif (num =="0"):
             exit()
