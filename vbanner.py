@@ -138,7 +138,7 @@ options='''
                                   
 '''
 def main():
-    print(green+"[+]"+yellow+" Choose one of the three options:"+options)
+    print(green+"[+]"+yellow+" Choose one of the four options:"+options)
     num = raw_input(ask+"Select "+purple+"> ")
     while True:
         if (num=="1"):
