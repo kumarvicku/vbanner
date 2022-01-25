@@ -84,7 +84,7 @@ apt install python2 && git clone https://github.com/kumarvicku/vbanner && cd vba
 
 ## This repository is open source to help others. So if you wish to copy, consider giving credit! 
 
-## [+] Find Me on :
+## [+] Find kumarvicku on :
 <p align="left">
   <a href="https://github.com/kumarvicku"_blank"><img src="https://img.shields.io/badge/Github-kumarvicku-darkblue?style=for-the-badge&logo=github"></a>
   <a href="https://www.instagram.com/v_for_vicku/" target="_blank"><img src="https://img.shields.io/badge/IG-%40v_for_vicku-darkblue?style=for-the-badge&logo=instagram"></a>
