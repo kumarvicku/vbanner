@@ -25,7 +25,7 @@
 
 
 ### [+] Description :
-***🚩 A simple and clean colourful python banner generator***
+***🚩 A simple and clean colourful python banner generator in 4 fonts design***
 
 ### [+] Installation
 
@@ -62,7 +62,7 @@ apt install python2 && git clone https://github.com/kumarvicku/vbanner && cd vba
 ### Features:
 1. Create Colorful banner
 2. Prints banner slowly
-3. Three options available
+3. Four options available
 
 ## Screenshots:
 
@@ -71,7 +71,7 @@ apt install python2 && git clone https://github.com/kumarvicku/vbanner && cd vba
 
 
 #### Generated file
-![3a3092ce-ac59-4b78-a5a7-5007fd5e45a3](https://user-images.githubusercontent.com/84949946/150723936-72f5bcb2-f211-448f-85c2-6d40f794105d.jpg)
+
 
 
 #### Generated File Preview 
