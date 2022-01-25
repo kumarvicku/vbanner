@@ -139,10 +139,10 @@ options='''
 '''
 def main():
     print(green+"[+]"+yellow+" Choose one of the four options:"+options)
-    num = raw_input(ask+"Select "+purple+"> ")
+    num = input(ask+"Select "+purple+"> ")
     while True:
         if (num=="1"):
-            logoword= raw_input("\n"+ask+"Enter word(s) "+purple+"> ")
+            logoword= input("\n"+ask+"Enter word(s) "+purple+"> ")
             if (logoword==""):
                 print("\n"+error+"No Input")
                 sleep(2)
@@ -154,7 +154,7 @@ def main():
                     print("\n"+error+"Error! Figlet not Installed.\n\n"+yellow+"[+] Install it by \"apt install figlet\"")
                     exit(1)
                 os.system("rm -rf temp.txt")
-                filename = raw_input("\n"+ask+"Output File Name "+purple+"> ")
+                filename = input("\n"+ask+"Output File Name "+purple+"> ")
                 if (filename==""):
                     print("\n"+error+"No Input")
                     sleep(2)
@@ -163,7 +163,7 @@ def main():
             writer(logotext,filename)
             exit()
         elif (num == "2"):
-            logoword= raw_input("\n"+ask+"Enter word(s) "+purple+"> ")
+            logoword= input("\n"+ask+"Enter word(s) "+purple+"> ")
             if (logoword==""):
                 print("\n"+error+"No Input")
                 sleep(2)
@@ -175,7 +175,7 @@ def main():
                     print("\n"+error+"Error! Toilet not Installed.\n\n"+yellow+"[+] Install it by \"apt install toilet\"")
                     exit(1)
                 os.system("rm -rf temp.txt")
-            filename = raw_input("\n"+ask+"Output File Name "+purple+"> " )
+            filename = input("\n"+ask+"Output File Name "+purple+"> " )
             if (filename==""):
                 print("\n"+error+"No Input")
                 sleep(2)
@@ -184,7 +184,7 @@ def main():
             writer(logotext,filename)
             break
         elif (num == "4"):
-            logoword= raw_input("\n"+ask+"Enter word(s) "+purple+"> ")
+            logoword= input("\n"+ask+"Enter word(s) "+purple+"> ")
             if (logoword==""):
                 print("\n"+error+"No Input")
                 sleep(2)
@@ -196,7 +196,7 @@ def main():
                     print("\n"+error+"Error! cowsay not Installed.\n\n"+yellow+"[+] Install it by \"apt install toilet\"")
                     exit(1)
                 os.system("rm -rf temp.txt")
-            filename = raw_input("\n"+ask+"Output File Name "+purple+"> " )
+            filename = input("\n"+ask+"Output File Name "+purple+"> " )
             if (filename==""):
                 print("\n"+error+"No Input")
                 sleep(2)
@@ -205,7 +205,7 @@ def main():
             writer(logotext,filename)
             break       
         elif (num == "3"):
-            logoword= raw_input("\n"+ask+"Enter word(s) "+purple+"> ")
+            logoword= input("\n"+ask+"Enter word(s) "+purple+"> ")
             if (logoword==""):
                 print("\n"+error+"No Input")
                 sleep(2)
@@ -213,7 +213,7 @@ def main():
             slowprint(pw)
             try:
                  logotext = requests.get('https://artii.herokuapp.com/make?text='+logoword).text
-                 filename = raw_input("\n"+ask+"Output File Name "+purple+"> ")
+                 filename = input("\n"+ask+"Output File Name "+purple+"> ")
                  os.system("rm -rf "+filename)
                  writer(logotext, filename)
             except:
