@@ -200,27 +200,6 @@ def main():
                 print(error+"No Internet or empty input!")
                 exit(1)
             break
-               elif (num == "4"):
-            logoword= raw_input("\n"+ask+"Enter word(s) "+purple+"> ")
-            if (logoword==""):
-                print("\n"+error+"No Input")
-                sleep(2)
-                main()
-            os.system("toilet "+logoword+" >> temp.txt")
-            with open("temp.txt", 'r') as file1:
-                logotext = file1.read()
-                if (logotext==""):
-                    print("\n"+error+"Error! Toilet not Installed.\n\n"+yellow+"[+] Install it by \"apt install toilet\"")
-                    exit(1)
-                os.system("rm -rf temp.txt")
-            filename = raw_input("\n"+ask+"Output File Name "+purple+"> " )
-            if (filename==""):
-                print("\n"+error+"No Input")
-                sleep(2)
-                main()
-            os.system("rm -rf "+filename)
-            writer(logotext,filename)
-            break
         elif (num =="0"):
             exit()
         elif (num =="4"):
