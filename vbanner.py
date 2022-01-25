@@ -200,7 +200,7 @@ def main():
                 print(error+"No Internet or empty input!")
                 exit(1)
             break
-               elif (num == "2"):
+               elif (num == "4"):
             logoword= raw_input("\n"+ask+"Enter word(s) "+purple+"> ")
             if (logoword==""):
                 print("\n"+error+"No Input")
