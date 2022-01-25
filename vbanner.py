@@ -126,16 +126,15 @@ options='''
 ||                       ||    '''+red+'''  \_/ |_.__/\_,_|_| |_|_| |_|\__||_|                  ||
 ||                       ||    '''+yellow+'''                                                      ||
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                    
-||                       ||    '''+blue+'''___                                                  ||
+||                       ||    '''+blue+'''___                                                   ||
 ||                       ||    '''+purple+'''< vbanner >                                           ||
-||4.cowsay               ||    '''+cyan+''' ---------                                           ||
+||4.cowsay               ||    '''+cyan+''' ---------                                            ||
 ||                       ||    '''+green+'''        \   ^__^                                       ||
-||                       ||    '''+red+'''         \  (oo)\___                                   ||
+||                       ||    '''+red+'''         \  (oo)\___                                    ||
 ||                       ||    '''+yellow+'''            (__)\       )\/\                          ||
-||                       ||    '''+green+'''                ||----w |                            ||
+||                       ||    '''+green+'''                ||----w |                             ||
 ||                       ||    '''+red+'''               ||     ||                                 ||
-||                       ||    '''+yellow+'''                                                    ||
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              ||     
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
                                   
 '''
 def main():
@@ -184,6 +183,27 @@ def main():
             os.system("rm -rf "+filename)
             writer(logotext,filename)
             break
+        elif (num == "4"):
+            logoword= raw_input("\n"+ask+"Enter word(s) "+purple+"> ")
+            if (logoword==""):
+                print("\n"+error+"No Input")
+                sleep(2)
+                main()
+            os.system("cowsay "+logoword+" >> temp.txt")
+            with open("temp.txt", 'r') as file1:
+                logotext = file1.read()
+                if (logotext==""):
+                    print("\n"+error+"Error! cowsay not Installed.\n\n"+yellow+"[+] Install it by \"apt install toilet\"")
+                    exit(1)
+                os.system("rm -rf temp.txt")
+            filename = raw_input("\n"+ask+"Output File Name "+purple+"> " )
+            if (filename==""):
+                print("\n"+error+"No Input")
+                sleep(2)
+                main()
+            os.system("rm -rf "+filename)
+            writer(logotext,filename)
+            break       
         elif (num == "3"):
             logoword= raw_input("\n"+ask+"Enter word(s) "+purple+"> ")
             if (logoword==""):
@@ -202,7 +222,7 @@ def main():
             break
         elif (num =="0"):
             exit()
-        elif (num =="4"):
+        elif (num =="5"):
         	os.system("xdg-open --view https://github.com/kumarvicku?tab=repositories")
         else:
             print("\n"+error+"Error! Please choose right number!")
