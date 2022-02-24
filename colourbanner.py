@@ -1,6 +1,6 @@
 import time, os, sys
 os.system("clear")
-print("If you have generated a banner file using creator.py you can use this.")
+print("If you have generated a banner file using colourbanner.py you can use this.")
 time.sleep(2)
 path= input("\nEnter file name or path > ")
 try:
