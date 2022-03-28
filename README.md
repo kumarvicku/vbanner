@@ -90,6 +90,6 @@ apt install python3 && git clone https://github.com/kumarvicku/vbanner && cd vba
   <a href="https://github.com/kumarvicku"_blank"><img src="https://img.shields.io/badge/Github-kumarvicku-darkblue?style=for-the-badge&logo=github"></a>
   <a href="https://www.instagram.com/v_for_vicku/" target="_blank"><img src="https://img.shields.io/badge/IG-%40v_for_vicku-darkblue?style=for-the-badge&logo=instagram"></a>
   <a href="https://www.facebook.com/profile.php?id=100055525980457" target="_blank"><img src="https://img.shields.io/badge/Chat-Messenger-darkblue?style=for-the-badge&logo=facebook"></a>
-  <a href="https://wa.me/917654707458" target="_blank"><img src="https://img.shields.io/badge/WHATSAPP-%2325D366.svg?&style=for-the-badge&logo=whatsapp&logoColor=white"></a>
+  <a href="https://wa.me/+918409340413" target="_blank"><img src="https://img.shields.io/badge/WHATSAPP-%2325D366.svg?&style=for-the-badge&logo=whatsapp&logoColor=white"></a>
 </p>
 
